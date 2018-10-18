@@ -9,8 +9,6 @@
 	<name>eCitros</name>
 	<description>Aproximando produtor do consumidor</description>
 	<modules>
-		<module>eCitros-bpm</module>
-		<module>eCitros-web</module>
 		<module>eCitros-core</module>
 		<module>eCitros-api</module>
 	</modules>

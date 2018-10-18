@@ -10,7 +10,7 @@
 	<groupId>br.com.evoluosoftware.ecitros.core</groupId>
 	<artifactId>eCitros-core</artifactId>
 	<name>eCitros-core</name>
-	<description>Aproximando produtor do consumidor</description>
+	<packaging>jar</packaging>
 	<build>
 		<plugins>
 			<plugin>
