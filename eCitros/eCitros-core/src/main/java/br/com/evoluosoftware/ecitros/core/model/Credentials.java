@@ -6,14 +6,15 @@ public class Credentials implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String password;
+	public static String generatePassword() {
+		String password = "";
+		final String possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-	public String getPassword() {
+		for (int i = 0; i < 5; i++) {
+			int rand = (int) Math.floor(Math.random() * possible.length());
+			password += possible.charAt(rand);
+		}
 		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 }

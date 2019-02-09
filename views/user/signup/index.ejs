@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<%- include ../commons/head.ejs %>
+	<body style="background-image: url('/eCitros/img/laranjas.jpg'); background-size: 100%">
+		<div id="wrapper">
+			<div id="content">
+				<%- include navbar.ejs %>
+				<div class="container" style="padding-top: 100px;">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-2">
+							<h2><%= t('signup.welcome.title') %></h2>
+							<p class="lead">
+								<%= t('signup.welcome.message') %>
+							</p>
+						</div>
+						<div class="col-md-4">
+							<%- include login-panel %>
+							<%- include entry-panel %>
+						</div>
+					</div>
+				</div>
+				<%- include ../commons/footer.ejs %>
+			</div>
+		</div>
+	</body>
+</html>

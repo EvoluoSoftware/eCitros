@@ -1,0 +1,19 @@
+{
+  "name": "eCitros",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "serve-favicon": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "method-override": "*",
+    "errorhandler": "*",
+    "ejs": "*",
+    "ejs-locals": "*",
+    "i18next": "*"
+  }
+}

@@ -11,14 +11,9 @@
 	<artifactId>eCitros-bpm</artifactId>
 	<packaging>war</packaging>
 	<name>eCitros-bpm</name>
-	<description>Aproximando produtor do consumidor</description>
+	<description>Processos de negócio do eCitros</description>
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>br.com.evoluosoftware.ecitros.core</groupId>
-				<artifactId>eCitros-core</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
 			<dependency>
 				<groupId>org.camunda.bpm</groupId>
 				<artifactId>camunda-bom</artifactId>
@@ -30,16 +25,25 @@
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
+			<groupId>br.com.evoluosoftware.ecitros.core</groupId>
+			<artifactId>eCitros-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.camunda.bpm</groupId>
 			<artifactId>camunda-engine</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
 		</dependency>
 	</dependencies>
 	<build>

@@ -11,6 +11,7 @@
 	<modules>
 		<module>eCitros-core</module>
 		<module>eCitros-api</module>
+		<module>eCitros-bpm</module>
 	</modules>
 	<build>
 		<plugins>

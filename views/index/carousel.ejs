@@ -1,0 +1,67 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="/eCitros/img/pomar.jpg" alt="...">
+			<div class="carousel-caption hidden-xs">
+				<h2 class="hidden-sm"><%=t('app.index.carousel.slide01.title')%></h2>
+				<p class="lead">
+					<%=t('app.index.carousel.slide01.description')%>
+				</p>
+				<a class="btn btn-default hidden-md hidden-sm hidden-xs" href="#"><%=t('app.index.more')%> &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<img src="/eCitros/img/colheita.jpg" alt="...">
+			<div class="carousel-caption hidden-xs">
+				<h2 class="hidden-sm"><%=t('app.index.carousel.slide02.title')%></h2>
+				<p class="lead">
+					<%=t('app.index.carousel.slide02.description')%>
+				</p>
+				<a class="btn btn-default hidden-md hidden-sm hidden-xs" href="#"><%=t('app.index.more')%> &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<img src="/eCitros/img/fabrica.jpg" alt="...">
+			<div class="carousel-caption hidden-xs">
+				<h2 class="hidden-sm"><%=t('app.index.carousel.slide03.title')%></h2>
+				<p class="lead">
+					<%=t('app.index.carousel.slide03.description')%>
+				</p>
+				<a class="btn btn-default hidden-md hidden-sm hidden-xs" href="#"><%=t('app.index.more')%> &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<img src="/eCitros/img/transporte.jpg" alt="...">
+			<div class="carousel-caption hidden-xs">
+				<h2 class="hidden-sm"><%=t('app.index.carousel.slide04.title')%></h2>
+				<p class="lead">
+					<%=t('app.index.carousel.slide04.description')%>
+				</p>
+				<a class="btn btn-default hidden-md hidden-sm hidden-xs" href="#"><%=t('app.index.more')%> &raquo;</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">
+			<%=t('app.index.carousel.previous')%>
+		</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span> 
+		<span class="sr-only">
+			<%=t('app.index.carousel.next')%>
+		</span>
+	</a>
+</div>

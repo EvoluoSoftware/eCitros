@@ -1,0 +1,96 @@
+{
+    "Partner": {
+        "type": {
+            "producer": "Produtor",
+            "industry": "Indústria",
+            "transporter": "Transportador",
+            "jobber": "Empreiteiro"
+        }
+    },
+    "User": {
+        "email": "E-mail",
+        "password": "Senha"
+    },
+    "app": {
+        "index": {
+            "carousel": {
+                "slide01": {
+                    "title": "Produtor Rural",
+                    "description": "Valorize mais seu produto vendendo por sólidos e dando foco no que o seu cliente mais precisa."
+                },
+                "slide02": {
+                    "title": "Indústria",
+                    "description": "Antecipe a compra de frutas e garanta sua cadeia de suprimento. Planeje a produção considerando frutas já compradas e a melhor data para recuperação de sólidos."
+                },
+                "slide03": {
+                    "title": "Transporte",
+                    "description": "Cadastre-se no eCitros e ofereça seus serviços de transporte, dando mais visibilidade ao seu negócio. O planejamento de colheita evitanado filas nas fábricas e aumentando sua capacidade de venda por carreta."
+                },
+                "slide04": {
+                    "title": "Empreiteiro",
+                    "description": "Você tem uma equipe de colheita? Cadastre-se no eCitros e ofereça sua mão de obra mais de 3000 propriedades. Você receberá a data e local da colheita que tiver fechado em seu e-mail ou celular."
+                },
+                "previous": "Anterior",
+                "next": "Próximo"
+            },
+            "more": "Saiba mais",
+            "marketing": {
+                "title": "Estreitando o relacionamento entre o produtor e a indústria",
+                "description1": "Nós ajudamos os produtores de frutas cítricas a produzir na qualidade que a indústria precisa. Incentivamos a comercialização por sólidos solúveis ao invés de caixa, para isto, dispomos de um laboratório móvel e de ferramenta estatística para planejar a melhor data de colheita, onde a maturidade da fruta atinge o ápce de sólidos e ratio. Assim, todos se beneficiam.",
+                "description2": "Confira os últimos preços praticados:"
+            },
+            "perSolids": "por Kg de sólidos",
+            "perBox": "por caixa",
+            "thumbnail01": {
+                "title": "Produção de frutas",
+                "description": "Ao entrar no eCitros, o produtor poderá cadastrar suas propriedades, talhões, variedades plantadas e preço desejado. A equipe de analistas do eCitros vai até a propriedade periodicamente, para realizar a análise das frutas e disponibilizará os resultados em seu painel. Os resultados da análise serão publicados às indústrias, permitindo a compra e planejamento de produção. Tudo acontece de forma transparente e organizada."
+            },
+            "thumbnail02": {
+                "title": "Produção de suco",
+                "description": "Com o eCitros a indústria poderá comprar por sólidos solúveis, no melhor momento de colheita, diminuindo custos de evaporação. As frutas que são negociadas antecipadamente, serão disponibilizadas na tela de planejamento de blendagem, dando previsibilidade à indústria e garantindo a cadeia de fornecimento. Além disto, com o eCitros, poerá controlar toda a cadeia de produção desde a emissão de romaneio virtual ao produtor, passando pelo processamento e realizando a expediçao do produto acabado."
+            },
+            "thumbnail03": {
+                "title": "Transporte de frutas",
+                "description": "O transportador que se cadastra no eCitros tem o benefício de poder oferecer seu serviço para um número maior de clientes. Uma vez que a colheita é planejada, o motorista evita filas, melhora o atendimento diminuindo o tempo de estadia da fruta na carreta (fazendo com que não se perca tanto óleo), e aumentando assim sua capacidade de atendimento. A final, mais clientes e mais tempo disponível, mais serviços a serem vendidos."
+            },
+            "thumbnail04": {
+                "title": "Empreiteiro",
+                "description": "No eCitros todos se beneficiam. O Empreiteiro também poderá oferecer sua mão de obra para mais clientes e trabalhar de forma coordenada. É possível acompanhar o planejamento e execução de colheita pelo site, tablet ou mesmo pelo celular. Cada evento no sistema que envolva o empreiteiro é enviado por e-mail ou SMS. Cadastre-se agora!"
+            },
+            "entry": "app.index.entry"
+        },
+        "title": "eCitros",
+        "address": {
+            "street": "Rua Laura Miranda, 261 - Centro",
+            "city": "Artur Nogueira",
+            "state": {
+                "symbol": "SP"
+            },
+            "zipcode": {
+            	"label": "CEP",
+            	"value":"13.160-000"
+            },
+            "fone": {
+                "label": "Telefone",
+                "value": "(19) 3204-2071"
+            }
+        },
+        "powerBy": {
+            "label": "Power by:"
+        },
+        "copyright": "Todos os direitos reservados",
+        "signup": {
+            "register": "Registrar"
+        },
+        "login": {
+            "submit": "Entrar"
+        }
+    },
+    "Variedade": {
+        "grupo": {
+            "laranja": "Laranja",
+            "limao": "Limão",
+            "tangerina": "Tangerina"
+        }
+    }
+}

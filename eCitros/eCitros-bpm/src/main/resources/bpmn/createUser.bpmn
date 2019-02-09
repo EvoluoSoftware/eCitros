@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_01iy8ou" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.16.0">
+  <bpmn:process id="create-user" name="Solicitar criação de usuário" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Solicitar criação de usuário">
+      <bpmn:outgoing>SequenceFlow_14jbbwb</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_14jbbwb" sourceRef="StartEvent_1" targetRef="CreateUser" />
+    <bpmn:serviceTask id="SendPasswordEmail" name="Enviar e-mail co senha" camunda:class="br.com.evoluosoftware.ecitros.bpm.delegate.SendPasswordEmailDelegate">
+      <bpmn:incoming>SequenceFlow_0jxsn6h</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1aorcni</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="EndEvent_1nuuwmw">
+      <bpmn:incoming>SequenceFlow_1aorcni</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1aorcni" sourceRef="SendPasswordEmail" targetRef="EndEvent_1nuuwmw" />
+    <bpmn:sequenceFlow id="SequenceFlow_0jxsn6h" sourceRef="CreateUser" targetRef="SendPasswordEmail" />
+    <bpmn:serviceTask id="CreateUser" name="Criar usuário" camunda:class="br.com.evoluosoftware.ecitros.bpm.delegate.CreateUserDelegate">
+      <bpmn:incoming>SequenceFlow_14jbbwb</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0jxsn6h</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="create-user">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="152" y="145" width="78" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_14jbbwb_di" bpmnElement="SequenceFlow_14jbbwb">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="259" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ServiceTask_0l3kjnh_di" bpmnElement="SendPasswordEmail">
+        <dc:Bounds x="408" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1nuuwmw_di" bpmnElement="EndEvent_1nuuwmw">
+        <dc:Bounds x="558" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1aorcni_di" bpmnElement="SequenceFlow_1aorcni">
+        <di:waypoint x="508" y="120" />
+        <di:waypoint x="558" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0jxsn6h_di" bpmnElement="SequenceFlow_0jxsn6h">
+        <di:waypoint x="359" y="120" />
+        <di:waypoint x="408" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ServiceTask_1jxwdi7_di" bpmnElement="CreateUser">
+        <dc:Bounds x="259" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
